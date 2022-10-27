@@ -46,14 +46,21 @@ namespace YP6_Cherednichenko402
             else if (u == "User" && p == "User")
                 f1.Navigate(new Uri("Page2.xaml", UriKind.Relative));
 
-            l1.Content = "Username";
-            username.Text = "";
+            
 
             l2.Content = "Password";
             password.Text = "";
 
+            if (chb.IsChecked == false)
+            { l1.Content = "Username";
+                username.Text = ""; }
+
+            else if (chb.IsChecked == true)
+                { l1.Content = "";
+                username.Text = u; }
         }
 
+        
         private void username_TextChanged(object sender, TextChangedEventArgs e)
         {
             l1.Content = "";
@@ -67,5 +74,7 @@ namespace YP6_Cherednichenko402
             if (password.Text == "")
                 l2.Content = "Password";
         }
+
+        
     }
 }
