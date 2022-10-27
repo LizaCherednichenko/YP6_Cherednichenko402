@@ -10,11 +10,9 @@
 
     <Grid>
         <Canvas Background="#FFAE9F99" Height="70" VerticalAlignment="Top">
-            <Label />
         </Canvas>
-        
 
-        <TextBox x:Name="login" Text="Username" Width="250" Height="40" Foreground="#FF9C9C9C" VerticalContentAlignment="Center" FontSize="18"/>
-        <TextBox x:Name="parol" Text="Password" Width="250" Height="40" Foreground="#FF9C9C9C" VerticalContentAlignment="Center" FontSize="18" Margin="275,257,275,153"/>
+        <TextBlock Text="Auth" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="36" />
+        
     </Grid>
 </Page>

@@ -24,5 +24,31 @@ namespace YP6_Cherednichenko402
         {
             InitializeComponent();
         }
+
+        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string u = username.Text;
+            string p = password.Text;
+            if (u == "" && p == "")
+                MessageBox.Show("Enter username and password!", "Information");
+            else if (u == "")
+                MessageBox.Show("Enter username!", "Information");
+            else if (p == "")
+                MessageBox.Show("Enter password!", "Information");
+            else if (u == "Admin" && p == "Admin")
+                f1.Navigate(new Uri("Page1.xaml", UriKind.Relative));
+            else if (u != "Admin" && u != "User")
+                MessageBox.Show("User is not found!", "Information");
+            else if (p != "Admin" && p != "User")
+                MessageBox.Show("Password incorrect!", "Information");
+            else if (u == "User" && p == "User")
+                f1.Navigate(new Uri("Page2.xaml", UriKind.Relative));
+            
+
+        }
+
+        
     }
 }

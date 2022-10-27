@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace YP6_Cherednichenko402
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для Page3.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page3 : Page
     {
-        public Page1()
+        public Page3()
         {
             InitializeComponent();
         }
-
-       
     }
 }
