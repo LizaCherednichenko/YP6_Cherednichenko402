@@ -21,7 +21,7 @@
         <Canvas Background="#FFAE9F99" Height="70" VerticalAlignment="Top" Grid.ColumnSpan="3">
         </Canvas>
 
-        <TextBlock Text="Auth" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="358,10,358,0" FontSize="36" Height="48" Width="76" Grid.ColumnSpan="3" />
+        <TextBlock Text="Auth" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Height="48" Width="76" Grid.ColumnSpan="3" Margin="10"/>
 
 
         <Label x:Name="l1" Background="White" Content="Username" Width="250" Height="40" Foreground="#FF9C9C9C"  VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="18" Grid.Row="1" Grid.Column="1"/>
@@ -37,7 +37,7 @@
         </StackPanel>
         
 
-        <Frame x:Name="f1"/>
+        <Frame x:Name="f1" Grid.ColumnSpan="3" Grid.RowSpan="2" Source="Page3.xaml" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>
