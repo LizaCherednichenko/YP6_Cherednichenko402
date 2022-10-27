@@ -45,10 +45,27 @@ namespace YP6_Cherednichenko402
                 MessageBox.Show("Password incorrect!", "Information");
             else if (u == "User" && p == "User")
                 f1.Navigate(new Uri("Page2.xaml", UriKind.Relative));
-            
+
+            l1.Content = "Username";
+            username.Text = "";
+
+            l2.Content = "Password";
+            password.Text = "";
 
         }
 
-        
+        private void username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            l1.Content = "";
+            if (username.Text=="")
+                l1.Content = "Username";
+        }
+
+        private void password_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            l2.Content = "";
+            if (password.Text == "")
+                l2.Content = "Password";
+        }
     }
 }

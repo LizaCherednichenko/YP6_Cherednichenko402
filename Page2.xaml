@@ -5,10 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:YP6_Cherednichenko402"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="800" Background="#FFC1CBAB" 
       Title="Page2">
 
     <Grid>
-        <Canvas Background="Bisque"/>
+        <Canvas Background="#FFAE9F99" Height="70" VerticalAlignment="Top">
+        </Canvas>
+
+        <TextBlock Text="Auth" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="36" />
+        <Image Source="image/razr.png" Width="50" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10"/>
+        <TextBlock Text="User" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="59,10,0,0" FontSize="36"/>
+
+        <Button Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
+            <Image x:Name="close" Source="image/close.png"/>
+        </Button>
+
+        <TextBlock Text="User Page" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36"/>
     </Grid>
 </Page>

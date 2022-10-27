@@ -5,17 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YP6_Cherednichenko402"
         mc:Ignorable="d"
-        Title="УП 6 Чередниченко 402" Height="450" Width="800" Background="#FFC1CBAB">
+        Title="УП 6 Чередниченко 402" Height="450" Width="800" Background="#FFC1CBAB" MinWidth="800" MinHeight="450">
     
     <Grid >
         <Canvas Background="#FFAE9F99" Height="70" VerticalAlignment="Top">
         </Canvas>
 
         <TextBlock Text="Auth" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="36" />
-        
 
-        <TextBox x:Name="username" Text="Username" Width="250" Height="40" Foreground="#FF9C9C9C" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="275,197,0,0"/>
-        <TextBox x:Name="password" Text="Password" Width="250" Height="40" Foreground="#FF9C9C9C" VerticalContentAlignment="Center" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="275,243,0,0"/>
+
+        <Label x:Name="l1" Background="White" Content="Username" Width="250" Height="40" Foreground="#FF9C9C9C"  VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="275,197,0,0"/>
+        <TextBox x:Name="username" Width="250" Height="40" VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="275,197,0,0" Foreground="Black" TextChanged="username_TextChanged" Background="{x:Null}"/>
+
+        <Label x:Name="l2" Content="Password" Width="250" Height="40" Foreground="#FF9C9C9C" VerticalContentAlignment="Center" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="275,243,0,0" Background="White"/>
+        <TextBox x:Name="password" Width="250" Height="40" Foreground="Black" VerticalContentAlignment="Center" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="275,243,0,0" Background="{x:Null}" TextChanged="password_TextChanged"/>
         <Button Width="140" Height="30" Content="Log in" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="385,290,0,0" Click="Button_Click" />
 
         <Frame x:Name="f1"/>
